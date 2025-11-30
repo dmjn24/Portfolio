@@ -5,9 +5,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 px-6 bg-background/50 min-h-[60vh] flex items-center scroll-mt-32"
+      className="py-20 px-6 bg-background/50 min-h-[60vh] flex items-center justify-center scroll-mt-32"
     >
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="w-fullmx-auto text-center">
         <p className="text-mango font-medium tracking-wider mb-4">
           04. What's Next?
         </p>
@@ -23,7 +23,7 @@ const Contact = () => {
 
         <Link
           href="mailto:damjantrajkovski0024@gmail.com"
-          className="inline-flex items-center gap-2 px-8 py-4 text-lg font-bold bg-mango rounded transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-mango/50 hover:brightness-110 active:scale-95"
+          className="inline-flex items-center gap-2 sm:px-8  px-4 py-4 text-lg font-bold bg-mango rounded transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-mango/50 hover:brightness-110 active:scale-95"
         >
           {" "}
           <Mail size={20} /> damjantrajkovski0024@gmail.com{" "}

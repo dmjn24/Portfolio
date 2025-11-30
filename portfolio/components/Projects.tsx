@@ -16,8 +16,8 @@ const projects = [
       "Laravel-API",
       "PHP",
     ],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/dmjn24",
+    demo: "https://github.com/dmjn24",
     image: "/coffe-gear.png",
   },
   {
@@ -25,8 +25,8 @@ const projects = [
     description:
       "Portfolio website built with React and Next.js, showcasing projects interactively.",
     tech: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/dmjn24",
+    demo: "https://github.com/dmjn24",
     image: "/portfoliop.png",
   },
   {
@@ -34,8 +34,8 @@ const projects = [
     description:
       "E-Commerce backend for Igralishte Skopje with Admin Dashboard, integrated OAuth social login for Google/Facebook accounts.",
     tech: ["PHP", "Laravel", "MySQL", "Tailwind", "Blade", "jQuery"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/dmjn24",
+    demo: "https://github.com/dmjn24",
     image: "/iigraliste.png",
   },
   {
@@ -52,8 +52,8 @@ const projects = [
       "JavaScript",
       "ImageKit",
     ],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/dmjn24",
+    demo: "https://github.com/dmjn24",
     image: "/marinov.png",
   },
   {
@@ -69,8 +69,8 @@ const projects = [
       "PDO",
       "ImageKit",
     ],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/dmjn24",
+    demo: "https://github.com/dmjn24",
     image: "/library.png",
   },
 ];
