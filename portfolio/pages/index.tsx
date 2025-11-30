@@ -4,6 +4,8 @@ import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Head from "next/head";
+import Footer from "@/components/Footer";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
@@ -15,14 +17,22 @@ export default function Home() {
           content="Portfolio of a Full Stack Developer"
         />
       </Head>
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
-      <footer className="py-6 text-center text-gray-500 text-sm bg-background border-t border-white/5">
-        <p>Designed & Built by DT.</p>
-      </footer>
+      <ScrollReveal width="100%">
+        <Hero />
+      </ScrollReveal>
+      <ScrollReveal width="100%">
+        <About />
+      </ScrollReveal>
+      <ScrollReveal width="100%">
+        <Experience />
+      </ScrollReveal>
+      <ScrollReveal width="100%">
+        <Projects />
+      </ScrollReveal>
+      <ScrollReveal width="100%">
+        <Contact />
+      </ScrollReveal>
+      <Footer />
     </>
   );
 }

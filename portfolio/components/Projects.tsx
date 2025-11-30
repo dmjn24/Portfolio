@@ -1,33 +1,77 @@
 import { Github, ExternalLink } from "lucide-react";
 import Link from "next/link";
-
+import Image from "next/image";
 const projects = [
   {
-    title: "E-Commerce Dashboard",
+    title: "E-Commerce CoffeGear",
     description:
-      "A comprehensive dashboard for managing online stores. Features include real-time analytics, inventory management, and order processing.",
-    tech: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL"],
+      "Interactive platform with products and category browsing,cart and wislisht updates, enabling checkout flow and ordering.",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Redux",
+      "TypeScript",
+      "React",
+      "PostgreSQL",
+      "Laravel-API",
+      "PHP",
+    ],
     github: "https://github.com",
     demo: "https://demo.com",
-    image: "bg-blue-900/20",
+    image: "/coffe-gear.png",
   },
   {
-    title: "AI Chat Application",
+    title: "Portfolio | Website",
     description:
-      "Real-time chat application powered by OpenAI's GPT-4. Includes history persistence, code syntax highlighting, and markdown support.",
-    tech: ["React", "Firebase", "OpenAI API", "Framer Motion"],
+      "Portfolio website built with React and Next.js, showcasing projects interactively.",
+    tech: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
     github: "https://github.com",
     demo: "https://demo.com",
-    image: "bg-purple-900/20",
+    image: "/portfoliop.png",
   },
   {
-    title: "Task Management Tool",
+    title: "Playground Skopje",
     description:
-      "Collaborative task management tool with Kanban boards, drag-and-drop interface, and team collaboration features.",
-    tech: ["Vue.js", "Node.js", "MongoDB", "Socket.io"],
+      "E-Commerce backend for Igralishte Skopje with Admin Dashboard, integrated OAuth social login for Google/Facebook accounts.",
+    tech: ["PHP", "Laravel", "MySQL", "Tailwind", "Blade", "jQuery"],
     github: "https://github.com",
     demo: "https://demo.com",
-    image: "bg-green-900/20",
+    image: "/iigraliste.png",
+  },
+  {
+    title: "Marinov Design",
+    description:
+      "Hackathons Project has interactive admin dashboards for monitoring and reporting. Integrated ImageKit for efficient image storage + optimization.",
+    tech: [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "Tailwind",
+      "Blade",
+      "Axios",
+      "JavaScript",
+      "ImageKit",
+    ],
+    github: "https://github.com",
+    demo: "https://demo.com",
+    image: "/marinov.png",
+  },
+  {
+    title: "Book Library",
+    description:
+      "Full-stack library management system with authentication, book CRUD, and comments.",
+    tech: [
+      "PHP",
+      "MySQL",
+      "Tailwind",
+      "jQuery",
+      "JavaScript",
+      "PDO",
+      "ImageKit",
+    ],
+    github: "https://github.com",
+    demo: "https://demo.com",
+    image: "/library.png",
   },
 ];
 
@@ -36,8 +80,8 @@ const Projects = () => {
     <section id="projects" className="py-20 px-6 bg-background/50">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-2 mb-12">
-          <span className="h-px w-12 bg-accent"></span>
-          <span className="text-accent font-medium tracking-wider">
+          <span className="h-px w-12 bg-mango"></span>
+          <span className="text-mango font-medium tracking-wider">
             PROJECTS
           </span>
         </div>
@@ -50,38 +94,41 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-white/5 rounded-xl overflow-hidden border border-white/10 hover:border-accent/50 transition-all duration-300 hover:-translate-y-1"
+              className="group bg-white/5 rounded-xl overflow-hidden border border-white/10 hover:border-mango/50 transition-all duration-300 hover:-translate-y-1"
             >
-              <div
-                className={`h-48 w-full ${project.image} flex items-center justify-center text-gray-500`}
-              >
-                [Project Preview]
+              <div className="h-48 w-full relative">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover w-full"
+                />
               </div>
 
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold text-white group-hover:text-accent transition-colors">
+                  <h3 className="text-xl font-bold text-white group-hover:text-mango transition-colors">
                     {project.title}
                   </h3>
                   <div className="flex gap-3">
                     <Link
                       href={project.github}
                       target="_blank"
-                      className="text-gray-400 hover:text-accent transition-colors"
+                      className="text-gray-400 hover:text-mango transition-colors"
                     >
                       <Github size={20} />
                     </Link>
                     <Link
                       href={project.demo}
                       target="_blank"
-                      className="text-gray-400 hover:text-accent transition-colors"
+                      className="text-gray-400 hover:text-mango transition-colors"
                     >
                       <ExternalLink size={20} />
                     </Link>
                   </div>
                 </div>
 
-                <p className="text-gray-400 text-sm mb-6 line-clamp-3">
+                <p className="text-gray-300 text-sm mb-6 line-clamp-3">
                   {project.description}
                 </p>
 
@@ -89,7 +136,7 @@ const Projects = () => {
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="text-xs font-medium text-accent/80 bg-accent/10 px-2 py-1 rounded"
+                      className="text-xs font-medium text-mango/80 bg-mango/10 px-2 py-1 rounded"
                     >
                       {tech}
                     </span>
