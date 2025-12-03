@@ -19,10 +19,7 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-4xl mx-auto w-full">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
-          Hey, I'm{" "}
-          <span className="text-transparent bg-clip-text bg-linear-to-r from-white to-gray-400">
-            Damjan
-          </span>
+          Hey, I'm <span className="text-white">Damjan</span>
         </h1>
         <h2 className="text-4xl md:text-6xl font-bold text-mango mb-8">
           Full Stack Developer
