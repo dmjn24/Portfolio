@@ -34,8 +34,9 @@ const projects = [
     description:
       "E-Commerce backend for Igralishte Skopje with Admin Dashboard, integrated OAuth social login for Google/Facebook accounts.",
     tech: ["PHP", "Laravel", "MySQL", "Tailwind", "Blade", "jQuery"],
-    github: "https://github.com/dmjn24",
-    demo: "https://github.com/dmjn24",
+    github:
+      "https://git.brainster.co/Damjan.Trajkovski-FS13/brainsterprojects_damjantrajkovskifs13/-/tree/project03",
+    demo: "https://git.brainster.co/Damjan.Trajkovski-FS13/brainsterprojects_damjantrajkovskifs13/-/tree/project03",
     image: "/iigraliste.png",
   },
   {
@@ -52,8 +53,8 @@ const projects = [
       "JavaScript",
       "ImageKit",
     ],
-    github: "https://github.com/dmjn24",
-    demo: "https://github.com/dmjn24",
+    github: "https://github.com/MartinaDimitrievska/Marinov-Hackaton/tree/dev",
+    demo: "https://github.com/MartinaDimitrievska/Marinov-Hackaton/tree/dev",
     image: "/marinov.png",
   },
   {
@@ -69,8 +70,9 @@ const projects = [
       "PDO",
       "ImageKit",
     ],
-    github: "https://github.com/dmjn24",
-    demo: "https://github.com/dmjn24",
+    github:
+      "https://git.brainster.co/Damjan.Trajkovski-FS13/brainsterprojects_damjantrajkovskifs13/-/tree/project02",
+    demo: "https://git.brainster.co/Damjan.Trajkovski-FS13/brainsterprojects_damjantrajkovskifs13/-/tree/project02",
     image: "/library.png",
   },
 ];
