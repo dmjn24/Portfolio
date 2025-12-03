@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfolio | Full Stack Developer</title>
+        <title>Portfolio | Damjan Trajkovski</title>
         <meta
           name="description"
           content="Portfolio of a Full Stack Developer"
